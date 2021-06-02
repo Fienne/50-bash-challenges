@@ -1,4 +1,7 @@
 #!/bin/sh
+
+# Print all the multiplication tables with numbers from 1 to 10
+
 i=1
 while [ $i -le 10 ]
 do

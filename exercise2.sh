@@ -1,4 +1,7 @@
 #!/bin/sh
+
+# Print the odd numbers less than 100
+
 i=0
 while [ $i -le 100 ]
 do

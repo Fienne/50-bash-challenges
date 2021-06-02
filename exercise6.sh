@@ -1,12 +1,13 @@
 #!bin/sh
+
+# Calculate 10!
+
 i=10
-sum=0
-while [ $i -le 30 ]
+fac=1
+while [ $i -ge 1 ]
 do
-	j=$(($i%2))
-	if [[ $j == 0 ]]; then
-		sum=$(($sum+$i));
-	fi
-	i=$(($i+1))
+	fac=$(($fac*$i))
+	i=$(($i-1))
 done
-echo "sum is = $sum"
+echo "factorial of 10 = $fac"
+	

@@ -1,4 +1,7 @@
 #!/bin/sh
+
+# Find the maximum number in an array of numbers
+
 function get_max(){
 	my_array=(5 6 8 9)
 	max_number=0

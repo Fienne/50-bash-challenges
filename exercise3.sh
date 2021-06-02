@@ -1,4 +1,7 @@
 #!/bin/sh
+ 
+# Print the multiplication table with 7
+
 i=1
 while [ $i -le 12 ]
 do
