@@ -1,5 +1,9 @@
 #!/bin/sh
-
+# Author : Elroy Kanye
+#
+# This function displays a boolean flag based on if the value passed to it is prime.
+# The first and only argument is the number in question. 
+# For a case where the value is less than 0, future and bored me will handle the job.
 is_prime () {
     val=$1
     flag=true
