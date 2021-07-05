@@ -5,10 +5,14 @@
 # The first and only argument is the number in question. 
 # For a case where the value is less than 0, future and bored me will handle the job.
 is_prime () {
+    # assign arg 1 to a val variable for readability
     val=$1
+
+    # flag is initially set to true. status is modified in the loop.
     flag=true
     if [ $val -gt 0 ] 
     then
+        # i initially set to 2 for start case of check since 1 is by default a factor.
         i=2
         while [ $i -lt $val ]
         do
