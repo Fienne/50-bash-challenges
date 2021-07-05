@@ -7,12 +7,14 @@ nfibonnaci () {
 
     init=$3
     fib=$(($2+$3))
-    
+    if [ $1 -eq 1 ]  # The base case of the recursion.
     if [ $n -eq 1 ] 
     then 
+        # At this point, the function should have been loaded n times.
         echo $2
+        # In case the value passed in is not valid, the function should end
     else
-        echo $init
+        # echo $init    this line was set just for looking at the fib sequence
         nfibonnaci $(($n-1)) $(($init)) $(($fib))
     fi
 }
