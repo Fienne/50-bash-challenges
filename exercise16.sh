@@ -28,4 +28,4 @@ is_prime () {
     echo "$flag"
 }
 
-is_prime 13
+is_prime 17814
