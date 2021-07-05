@@ -18,7 +18,9 @@ is_prime () {
         do
             if [ $(($val%$i)) -eq 0 ]
             then
+                # point where the value is actually proven not prime
                 flag=false
+                break # the loop is broken and the program jumps to line 28
             fi
             i=$(($i+1))
         done
