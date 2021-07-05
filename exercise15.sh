@@ -12,11 +12,15 @@ nfibonnaci () {
     then 
         # At this point, the function should have been loaded n times.
         echo $2
+    elif [ $1 -lt 1 ]
+    then 
         # In case the value passed in is not valid, the function should end
+        echo "Value is invalid"
+       return
     else
         # echo $init    this line was set just for looking at the fib sequence
         nfibonnaci $(($n-1)) $(($init)) $(($fib))
     fi
 }
 
-nfibonnaci 6 0 1
+nfibonnaci -6 0 1
